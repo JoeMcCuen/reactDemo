@@ -12,6 +12,10 @@ interface Props {
   onSelectItem: (item: string) => void;
 }
 
+// Props vs State
+// Props - should be immutable (unchangeable). They are input passed to
+// components.
+// State - mutable. Similar to local variables.
 function ListGroup({ items, heading, onSelectItem }: Props) {
   // This is a hook - that let's us tell React that this
   // component has state that will change over time.
